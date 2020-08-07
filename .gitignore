@@ -4,6 +4,7 @@ node_modules/
 package-lock.json
 script-compiled.js.map
 __pycache__
+SentinelUE4Tools.egg-info/
 
 /build/
 
