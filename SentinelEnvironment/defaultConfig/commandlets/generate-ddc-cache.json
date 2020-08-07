@@ -1,0 +1,6 @@
+{
+	"command": "DerivedDataCache ",
+	"flags": [
+		"fill"
+	]
+}

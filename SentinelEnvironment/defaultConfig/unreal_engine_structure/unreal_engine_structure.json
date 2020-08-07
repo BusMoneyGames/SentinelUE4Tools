@@ -1,0 +1,6 @@
+{
+      "binaries_root_folder":"Engine/Binaries",
+      "editor_binary_name":"UE4Editor",
+      "editor_binary_cmd_name":"UE4Editor-Cmd",
+      "unreal_build_tool_path":"Binaries/DotNET/UnrealBuildTool"
+ }

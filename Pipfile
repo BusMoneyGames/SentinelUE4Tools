@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+server = "python server.py"
+vcs = "python Sentinel.py run-module vcs"
+ue4 = "python Sentinel.py run-module  ue4" 
+db = "python Sentinel.py run-module  database" 
+environment = "python Sentinel.py run-module  environment"
+commands = "python Sentinel.py commands"
+query = "python Sentinel.py queries"
+sentinel = "python Sentinel.py"
+
+[packages]
+gitpython = "*"
+boto = "*"
+"boto3" = "*"
+requests = "*"
+flask = "*"
+flask-restful = "*"
+flask-cors = "*"
+click = "*"
+pyqt5 = "*"
+pytest = "*"
+teamcity-messages = "*"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+
+[requires]
+python_version = "3"

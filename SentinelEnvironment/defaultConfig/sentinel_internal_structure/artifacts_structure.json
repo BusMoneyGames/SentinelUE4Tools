@@ -1,0 +1,8 @@
+{
+      "sentinel_raw_logs_path":"Raw/_Cache",
+      "sentinel_client_run_output": "Raw/_client_run",
+      "sentinel_processed_path": "Data/",
+      "sentinel_build_path": "Build/",
+      "sentinel_default_cook_log_name":"default_client_build.log",
+      "sentinel_default_editor_log_name":"default_compile.log"
+}

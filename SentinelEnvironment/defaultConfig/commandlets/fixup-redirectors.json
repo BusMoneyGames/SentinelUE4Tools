@@ -1,0 +1,6 @@
+{
+	"command": "ResavePackages",
+	"flags": ["fixupredirects",
+		"projectonly","unattended"
+	]
+}

@@ -1,0 +1,14 @@
+{
+   "command": "ResavePackages",
+   "flags": [
+      "buildlighting",
+      "BuildReflectionCaptures",
+      "ForceEnableHLODForLevel",
+      "ShouldBuildHLOD",
+      "SkipDeveloperFolders",
+      "allowcommandletrendering",
+      "ignorechangelist",
+      "projectonly",
+      "mapsonly"
+   ]
+}

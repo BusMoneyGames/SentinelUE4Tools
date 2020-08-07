@@ -1,0 +1,23 @@
+{
+   "run_scripts": {
+      "run_sentinel_test": "%~dp0WindowsNoEditor/sentinelUE4.exe Map_UITest -sentinelTest_Default -windowed"
+   },
+   "should_compile": true,
+   "compress": false,
+   "deploy_location": "",
+   "compile_profile":"default_installed",
+   "build_configuration": "Development",
+   "build_platform": "Win64",
+   "build_command": "BuildCookRun",
+   "build_flags": [
+      "cook",
+      "iterate",
+      "nop4",
+      "nocompileeditor",
+      "build",
+      "stage",
+      "archive",
+      "pak",
+      "prereqs"
+   ]
+}

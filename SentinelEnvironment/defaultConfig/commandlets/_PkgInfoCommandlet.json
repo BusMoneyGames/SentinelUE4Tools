@@ -1,0 +1,21 @@
+{
+   "command": "PkgInfoCommandlet",
+   "detail_extract_types": [
+      "Blueprint",
+      "StaticMesh"
+   ],
+   "flags": [
+      "names",
+      "paths",
+      "assetregistry"
+   ],
+   "detailed_extract": [
+      "paths",
+      "depends",
+      "imports",
+      "exports",
+      "names",
+      "depends",
+      "AssetRegistry"
+   ]
+}

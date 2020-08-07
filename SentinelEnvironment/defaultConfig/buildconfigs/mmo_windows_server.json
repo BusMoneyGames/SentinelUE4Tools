@@ -1,0 +1,23 @@
+{
+   "run_scripts": {
+      "run_servers": "start %~dp0WindowsNoEditor/DriftMMOPlugin.exe /Game/Maps/Map_Red_P?listen -port=20000 -nullRHI -log \n start %~dp0WindowsNoEditor/DriftMMOPlugin.exe /Game/Maps/Map_Blue_P?listen -port=20001 -nullRHI -log"
+   },
+   "should_compile": true,
+   "compile_profile":"default_source",
+   "compress": false,
+   "deploy_location": "",
+   "build_configuration": "Development",
+   "build_platform": "Win64",
+   "build_command": "BuildCookRun",
+   "build_flags": [
+      "cook",
+      "iterate",
+      "nop4",
+      "nocompileeditor",
+      "build",
+      "stage",
+      "archive",
+      "pak",
+      "prereqs"
+   ]
+}

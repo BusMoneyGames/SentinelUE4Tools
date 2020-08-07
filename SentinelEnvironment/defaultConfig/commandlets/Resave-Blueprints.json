@@ -1,0 +1,9 @@
+{
+	"command": "ResavePackages",
+	"flags": [
+		"-IncludeChildClasses",
+		"ResaveClass=Blueprint",
+		"ignorechangelist",
+		"projectonly"
+	]
+}

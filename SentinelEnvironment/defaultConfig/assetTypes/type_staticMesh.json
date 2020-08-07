@@ -1,0 +1,12 @@
+{
+   "Type": "StaticMesh",
+   "Convention": "[Prefix]_[AssetName][Iterator]",
+   "Convention_Detail": [
+      {
+         "Name": "Prefix",
+         "Valid": [
+            "SM"
+         ]
+      }
+   ]
+}

@@ -1,0 +1,7 @@
+{"editor_compile_flags": [
+      "TargetType=Editor",
+      "progress",
+      "NoHotReloadFromIDE"
+   ],
+  "components": []
+}

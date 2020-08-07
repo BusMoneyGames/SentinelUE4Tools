@@ -1,0 +1,7 @@
+{
+	"command": "ResavePackages",
+	"flags": [
+		"ignorechangelist",
+		"projectonly"
+	]
+}

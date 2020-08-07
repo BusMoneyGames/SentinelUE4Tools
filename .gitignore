@@ -1,0 +1,14 @@
+﻿ *.pyc
+.idea/
+node_modules/
+package-lock.json
+script-compiled.js.map
+__pycache__
+
+/build/
+
+*.log
+/SentinelTool/
+_sentinelConfig.json
+
+.vscode
