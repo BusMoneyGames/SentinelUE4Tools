@@ -266,19 +266,23 @@ class UnrealClientBuilder(BaseUnrealBuilder):
     def post_build_actions(self):
         super().post_build_actions()
 
-        print(self.build_settings)
-
         # Check if key exists and if the values are true
         if "compress" in self.build_settings and self.build_settings["compress"] is True:
+            
             # Creates an archive
-            L.debug("Starting to archive")
             build_root_directory = self.get_archive_directory()
-            L.debug("Build Root: %s", build_root_directory)
+            zip_file = str(build_root_directory) + ".zip"
+            print(f"Making file {zip_file}")
 
-             # zip_file_path =
-            L.info("Starting build compression...")
-            shutil.make_archive(build_root_directory, 'zip', build_root_directory)
-            L.info("Build Compressed!")
+            # This is definetly not a good idea 
+            for each in list(pathlib.Path(build_root_directory).glob('*')):
+                if each.is_dir():
+                    archive_contents = each
+                    break
+            
+            print("Starting to archive...")
+            shutil.make_archive(base_name=build_root_directory, format='zip', root_dir=archive_contents)
+            print("Archiving Finished!")
 
             L.debug("Removing build source since we are making an archive")
 
