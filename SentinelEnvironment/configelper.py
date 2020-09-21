@@ -51,11 +51,16 @@ def add_engine_information(run_config):
     # TODO Change this so that it checks the the actual registry
 
     engine_path = run_config["environment"]["engine_root_path"]
+    
+    print("Support for installed engine disabled for a bit")
+    return run_config
 
     for each_file in os.listdir(engine_path):
         if "generateprojectfiles" in each_file.lower():
 
             # TODO make sure that the unreal engine structure entry actually exists before trying to add to it
+
+            if "unreal_engine_structure" in run_config:
             run_config["unreal_engine_structure"]["is_installed"] = False
             return run_config
 
