@@ -10,12 +10,6 @@ import configelper
 import config_constants
 
 L = logging.getLogger()
-logfile = "Logs/SentinelEnvironment.log"
-
-if os.path.exists(logfile):
-    os.remove(logfile)
-
-logging.basicConfig(filename="Logs/SentinelEnvironment.log",level=logging.DEBUG,format='%(asctime)s - %(levelname)s - %(message)s')
 
 def _load_environment_config(overwrite_path=""):
     """Finds the config file that contains the environment information"""
