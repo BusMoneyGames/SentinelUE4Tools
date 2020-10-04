@@ -168,6 +168,7 @@ class UnrealEditorBuilder(BaseUnrealBuilder):
         L.debug("Available editor compile targets: ")
         L.debug(", ".join(self.editor_compile_settings.keys()))
 
+        # This needs to be fixed at some point!
         if "is_installed" in run_config["unreal_engine_structure"] and run_config["unreal_engine_structure"]["is_installed"]:
             compile_profile = "default_installed"
         else:
