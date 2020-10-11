@@ -128,6 +128,10 @@ class BaseUnrealBuilder:
         if not path.parent.exists():
             os.makedirs(path.parent)
 
+        print("-------------")
+        print("Running command:")
+        print(cmd)
+        print("-------------")
         popen = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
         with open(path, "w", encoding='utf-8') as fp:
