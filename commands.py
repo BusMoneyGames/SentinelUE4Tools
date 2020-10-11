@@ -116,6 +116,16 @@ def generate_ddc_cache(ctx):
 
 @cli.command()
 @click.pass_context
+def fix_up_redirectors(ctx):
+    """Runs the commandlet fix up redirectors"""
+
+    data = utilities.convert_input_to_dict(ctx)
+
+    cmd = utilities.get_commandline(SENTINEL_SCRIPT_PATH, ["run-module", "ue4", "project", "commandlet"], data, sub_command_arguments=["--task=fixup-redirectors"])
+    utilities.run_cmd(cmd)
+
+@cli.command()
+@click.pass_context
 def validate_blueprints(ctx):
     """Check all blueprints in the project for errors"""
 
