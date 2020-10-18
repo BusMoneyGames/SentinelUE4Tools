@@ -140,6 +140,11 @@ class BaseUE4Commandlet:
 
         L.info("Running commandlet: %s", commandlet_command)
 
+        print("-"*20)
+        print("Running commandlet: ")
+        print(commandlet_command)
+        print("-"*20)
+        
         temp_dump_file = os.path.join(self.raw_log_path, self.log_file_name)
 
         if not os.path.exists(os.path.dirname(temp_dump_file)):
@@ -162,10 +167,6 @@ class BaseUE4Commandlet:
         if popen.returncode == 0:
             L.info("Command ran successfully")
         else:
-            if self.ignore_exitcode:
-                L.info(f"Overwriting exit code {self.ignore_exitcode} with 0")
-                sys.exit(0)
-
             L.warning("Process exit with exit code: %s", popen.returncode)
             
             sys.exit(popen.returncode)
